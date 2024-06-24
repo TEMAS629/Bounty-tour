@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+}
+
+.autorisation {
+  width: 100%;
+  top: 0;
+  height: 780px;
+  background-image: url(../img/fon_form.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+
+.autorisation .title {
+  margin-top: 200px;
+  font-size: 96px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: var(--card);
+}
+
+form .p2 {
+  color: var(--card);
+}
+
+form .p2.error {
+  color: #a51010;
+}
+
+form .p2 a {
+  color: var(--card);
+  text-decoration: underline;
+
+}
+
+form .p2 a:hover {
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1f538fcc;
+  color: var(--card) !important;
+}
+
+.autorisation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000054;
+  z-index: 0;
+}
+
+.form_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  justify-content: center;
+  margin: 60px 0;
+  gap: 20px;
+}
+
+.form_input {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.form_input input {
+  width: 100%;
+  background: transparent;
+  font-size: 24px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: #ffffff !important;
+  border: none;
+  border-bottom: 1px solid #ffffff !important;
+  padding: 8px;
+}
+
+form .btn {
+  width: 100%;
+  border: 1px solid #1f538fcc !important;
+  color: var(--card) !important;
+  background: transparent;
+  border-bottom: none;
+  transition: 0.3s all;
+}
+
+.form_input input:focus {
+  outline: none;
+}
+
+.form_input .form::placeholder {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .autorisation .title {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 560px) {
+  .autorisation .title {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 520px) {
+  .form_input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .autorisation .title {
+    font-size: 40px;
+  }
+  .autorisation{
+    height: 650px;
+  }
+  .autorisation .title{
+    margin-top: 150px;
+  }
+  .form_input{
+    gap: 20px;
+  }
+}

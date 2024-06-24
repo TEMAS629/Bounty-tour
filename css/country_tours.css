@@ -1,0 +1,158 @@
+body{
+    background: #f6f6f8;
+}
+.tours_holder {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 180px 0 60px;
+}
+
+.tours_holder .single_tour {
+    display: flex;
+    gap: 15px;
+    max-height: 300px;
+    height: fit-content;
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.41);
+}
+
+.tours_holder .single_tour .swiper-slide {
+    height: 300px;
+    width: fit-content;
+}
+
+.tours_holder .single_tour .image_holder {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.tours_holder .single_tour .info_holder {
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.tours_holder .single_tour .info_holder .options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.tours_holder .single_tour .info_holder .options .option{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tours_holder .single_tour .info_holder .options .option svg{
+    width: 40px;
+    height: 40px;
+}
+
+.tours_holder .single_tour .info_holder .options .option img{
+    width: 40px;
+    height: 40px;
+}
+
+.tours_holder .single_tour .info_holder .sity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tours_holder .single_tour .price_holder {
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    border-left: 1px solid #47688d93;
+}
+
+.tours_holder .single_tour .price_holder .btn{
+    background: var(--hover);
+}
+
+.tours_holder .single_tour .image_holder .swiper{
+    height: 100%;
+}
+
+.tours_holder .single_tour .image_holder .pagination{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tours_holder .single_tour .image_holder .swiper-slide img{
+    object-fit: cover;
+}
+
+@media (max-width:1410px) {
+    .tours_holder .single_tour .price_holder .btn{
+        width: 100%;
+        padding: 22px 10px;
+    }
+}
+
+@media (max-width:1100px){
+    .tours_holder .single_tour .info_holder .options{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tours_holder .single_tour{
+        max-height: 500px;
+        height: fit-content;
+    }
+    .tours_holder .single_tour .swiper-slide{
+        height: 425px;
+    }
+    .tours_holder .single_tour .info_holder{
+        width: 30%;
+    }
+    .tours_holder .single_tour .price_holder{
+        width: 35%;
+    }
+}
+
+@media (max-width:800px){
+    .tours_holder .single_tour{
+        flex-direction: column;
+    }
+    .tours_holder .single_tour .info_holder .options{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .tours_holder .single_tour .info_holder{
+        width: 100%;
+    }
+    .tours_holder .single_tour .price_holder{
+        width: 100%;
+    }
+    .tours_holder .single_tour .image_holder{
+        width: 100%;
+    }
+    .tours_holder .single_tour{
+        height: fit-content;
+        max-height: unset;
+    }
+    .tours_holder .single_tour .price_holder{
+        border-top: 1px solid #47688d93;
+        border-left: unset;
+    }
+}
+
+@media (max-width:420px){
+    .tours_holder .single_tour .swiper-slide{
+        height: 250px;
+    }
+}

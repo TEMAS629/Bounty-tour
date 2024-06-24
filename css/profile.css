@@ -1,0 +1,243 @@
+#header {
+    background-color: #18416f;
+    position: relative !important;
+}
+
+.main_profile {
+    padding-bottom: 60px;
+}
+
+.profile .name_user span {
+    color: #123f65;
+}
+
+.main_profile .btn_exit {
+    display: flex;
+    justify-content: end;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+.profile h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profile .btn {
+    background: var(--primary);
+    margin-bottom: 40px;
+}
+
+.profile .title_history {
+    font-size: 48px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #123f65;
+}
+
+.profile .history_holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.profile .history_holder .history_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--card);
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.41);
+    padding: 20px;
+    gap: 10px;
+}
+
+.profile .history_holder .history_card .name_holder {
+    display: flex;
+    align-items: end;
+    gap: 5px;
+}
+
+.profile .history_holder .history_card .name_holder .p1 {
+    line-height: 100%;
+}
+
+.profile .history_holder .history_card .name_holder .name_holder_main {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.profile .history_holder .history_card .p2 span {
+    color: #123f65;
+    font-size: 24px;
+}
+
+.profile .history_holder .history_card .info_history {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+
+.profile .history_holder .history_card .info_tour {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile .history_holder .history_card .info_tour a {
+    width: 100%;
+    height: 100%;
+}
+
+.profile .history_holder .history_card .info_tour a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile .history_holder .history_card .info_tour .info_holder .adults {
+    padding-top: 10px;
+}
+
+.profile .history_holder .history_card .info_tour .info_holder .info_tour_history {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.profile .history_holder .history_card .info_tour .info_holder .info_tour_history .price {
+    color: #123f65;
+}
+
+@media (max-width: 1500px) {
+    .profile .history_holder .history_card .info_tour .info_holder .info_tour_history {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media (max-width: 1200px) {
+    .profile .history_holder {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .profile .history_holder .history_card {
+        gap: 0;
+    }
+
+    .profile .history_holder .history_card .info_tour {
+        padding-top: 5px;
+    }
+
+    .profile .history_holder .history_card .p2 span {
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    .profile .history_holder .history_card .name_holder .p1 {
+        font-size: 16px;
+    }
+
+    .profile h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .profile .history_holder .history_card .info_tour .info_holder .info_tour_history .p2 {
+        font-size: 16px;
+    }
+
+    .profile .history_holder .history_card .name_holder .name_holder_main {
+        gap: 5px;
+    }
+
+    .profile .history_holder .history_card .info_history {
+        gap: 3px;
+    }
+}
+
+@media (max-width: 625px) {
+    .profile .history_holder {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profile .history_holder .history_card .info_tour a {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+    .profile h1 {
+        margin-top: 20px;
+        font-size: 32px;
+    }
+
+    .profile .title_history {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 530px) {
+    .profile .history_holder .history_card .info_tour a {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main_profile .btn_exit {
+        padding-right: 15px;
+    }
+
+    .profile .btn {
+        height: 52px;
+        padding: 12px 55px;
+    }
+}
+
+@media (max-width: 440px) {
+    .profile h1 {
+        font-size: 28px;
+    }
+
+    .profile .title_history {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .profile h1 {
+        font-size: 24px;
+    }
+
+    .profile .title_history {
+        font-size: 26px;
+    }
+    .profile .btn{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .main_profile .btn_exit{
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .profile h1 {
+        font-size: 22px;
+    }
+
+    .profile .title_history {
+        font-size: 24px;
+    }
+}
